@@ -34,7 +34,7 @@ exports.fetchWithCallback = function(cb) {
 }
 
 // Next, using a 'promisified' version of request
-exports.fetchWithPromise = function(cb) {
+exports.fetchWithPromise = function() {
   var request = require('request-promise')
   return request('http://jsonplaceholder.typicode.com/posts')
     .then(function(body1) {
